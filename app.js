@@ -8,10 +8,10 @@
 
 // Event handling, user interaction is what starts the code execution.
 
-var taskInput=document.getElementById("new-task");//Add a new task.
-var addButton=document.getElementsByTagName("button")[0];//first button
-var incompleteTaskHolder=document.getElementById("incomplete-tasks");//ul of #incompleteTasks
-var completedTasksHolder=document.getElementById("completed-tasks");//completed-tasks
+var taskInput=document.querySelector(".main-top__task");//Add a new task.
+var addButton=document.querySelector(".button-add");//first button
+var incompleteTaskHolder=document.querySelector(".incomplete-tasks__list");//ul of #incompleteTasks
+var completedTasksHolder=document.querySelector(".completed-tasks__list");//completed-tasks
 
 
 //New task list item
@@ -33,7 +33,7 @@ var createNewTaskElement=function(taskString){
     var deleteButtonImg=document.createElement("img");//delete button image
 
     label.innerText=taskString;
-    listItem.className="item"
+    listItem.className="list__item"
     label.className='label-task task';
 
     //Each elements, needs appending
@@ -47,7 +47,7 @@ var createNewTaskElement=function(taskString){
 
     deleteButton.className="button js-delete";
     deleteButtonImg.src='./remove.svg';
-    deleteButtonImg.className="btn-delete-img"
+    deleteButtonImg.className="button__img"
     deleteButton.appendChild(deleteButtonImg);
 
 
