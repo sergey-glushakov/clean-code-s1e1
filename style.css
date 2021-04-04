@@ -2,7 +2,7 @@
 body {
   background-color: #f8f8f8;
   color: #333;
-  font-family: Lato, sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 ul {
@@ -16,8 +16,8 @@ h3 {
 }
 
 input,
-button{
-  outline:none;
+button {
+  outline: none;
 }
 /* END Basic Style */
 
@@ -33,7 +33,7 @@ button{
 }
 
 .header__link {
-  font-family: fantasy, cursive;
+  font-family: "fantasy", cursive;
 }
 
 .main-content {
@@ -58,7 +58,7 @@ button{
   color: #888;
   font-size: 15px;
   width: 60px;
-  font-family: Lato, sans-serif;
+  font-family: "Lato", sans-serif;
   cursor: pointer;
 }
 
@@ -87,7 +87,7 @@ button{
   border: 1px solid #ddd;
   background: #fff;
   border-radius: 6px;
-  font-family: Lato, sans-serif;
+  font-family: "Lato", sans-serif;
   color: #888;
 }
 
@@ -166,10 +166,8 @@ button{
   color: #888;
 }
 
-@media (max-width:768px) {
-
+@media (max-width: 768px) {
   .header {
     text-align: center;
   }
-
 }
